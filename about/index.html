@@ -1,0 +1,18 @@
+---
+layout: feed
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+	<title>"I have no idea what's going on," said Towelie.</title>
+	<link href="http://anellas.github.io/blog/atom.xml" rel="self"/>
+	<link href="http://anellas.github.io/blog"/>
+	<updated>{{ site.time | date_to_xmlschema }}</updated>
+	<id>http://anellas.github.io/blog</id>
+	<author>
+		<name>Anellas</name>
+		<email>anellas@yahoo.com</email>
+	</author>
+
+	{% for post in site.posts %}
+		<entry>
